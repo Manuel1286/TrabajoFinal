@@ -1,0 +1,105 @@
+<!--====== CONTACT PART START ======-->
+
+<section id="contact" class="contact-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10">
+                <div class="section-title text-center pb-30">
+                    <h3 class="title">LUGARES DE APUESTAS</h3>
+                    <p class="text">En el mapa Puede encontrar los Lugares donde Puede Recargar su ping, para poder Jugar con nos otros!</p>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-map mt-30">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div> <!-- row -->
+            </div>
+        </div> <!-- row -->
+        <div class="contact-info pt-30">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-contact-info contact-color-1 mt-30 d-flex ">
+                        <div class="contact-info-icon">
+                            <i class="lni lni-map-marker"></i>
+                        </div>
+                        <div class="contact-info-content media-body">
+                            <p class="text"> Manuel Guillermo Sanchez,<br>Colombia-Bogota</p>
+                        </div>
+                    </div> <!-- single contact info -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-contact-info contact-color-2 mt-30 d-flex ">
+                        <div class="contact-info-icon">
+                            <i class="lni lni-envelope"></i>
+                        </div>
+                        <div class="contact-info-content media-body">
+                            <p class="text">manuel.1286@hotmail.com</p>
+                            <p class="text">fulbolparatodos@gmail.com</p>
+                        </div>
+                    </div> <!-- single contact info -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-contact-info contact-color-3 mt-30 d-flex ">
+                        <div class="contact-info-icon">
+                            <i class="lni lni-phone"></i>
+                        </div>
+                        <div class="contact-info-content media-body">
+                            <p class="text">789-321-654</p>
+                            <p class="text">985-458-609</p>
+                        </div>
+                    </div> <!-- single contact info -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- contact info -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-wrapper form-style-two pt-115">
+                    <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span> ESCOJA SU MARCADOR Y REDIMIENTO</span></h4>
+                    
+                    <form [formGroup]="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>Dijite el Equipo Ganador</label>
+                                    <div class="input-items default">
+                                        <input formControlName="equipo" placeholder="Equipo">
+                                        <!-- <i class="lni lni-user"></i> -->
+                                    </div>
+                                </div> <!-- form input -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>Porcentaje de Rendimiento</label>
+                                    <div class="input-items default">
+                                        <input formControlName="rendimiento" placeholder="%">
+                                        <!-- <i class="lni lni-envelope"></i> -->
+                                    </div>
+                                </div> <!-- form input -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-input mt-25">
+                                    <label>Haga su Apuesta</label>
+                                    <div class="input-items default">
+                                        <textarea formControlName="valorApostar" placeholder="Monto Portar"></textarea>
+                                        <i class="lni lni-pencil-alt"></i>
+                                        <img src="https://previews.123rf.com/images/monkichi/monkichi2004/monkichi200400110/145939909-football-soccer-match-results-stats.jpg" alt="" width="1100" height="500">                                        
+                                    </div>
+                                </div> <!-- form input -->
+                            </div>
+                            <p class="form-message"></p>
+                            <div class="col-md-12">
+                                <div class="form-input light-rounded-buttons mt-30">
+                                    <button (click)="sendMessage()" class="main-btn light-rounded-two">Apuestas En Vivo</button>
+                                </div> <!-- form input -->
+                            </div>
+                        </div> <!-- row -->
+                    </form>
+                </div> <!-- contact wrapper form -->
+            </div>
+        </div> <!-- row -->
+    </div> 
+</section>
+
+<!--====== CONTACT PART ENDS ======-->
